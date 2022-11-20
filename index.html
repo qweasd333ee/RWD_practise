@@ -11,8 +11,9 @@
       padding: 0;
       margin: 0;
       width: 100%;
+      transition: 1s;
     }
-    
+
     .card {
       width: 100%;
       display: flex;
@@ -20,10 +21,12 @@
       align-items: flex-start;
       margin: 20px 0;
     }
+
     img {
       width: 50%;
       align-self: center;
     }
+
     .align-self-center {
       align-self: center;
     }
@@ -32,7 +35,9 @@
       margin: 30px 0;
     }
 
-    h1,h2,p {
+    h1,
+    h2,
+    p {
       margin: 20px;
     }
 
@@ -54,62 +59,142 @@
       margin: 0 15px;
     }
 
+    .line {
+      display: none;
+    }
+
     @media (min-width: 576px) {
       body {
+        height: 100vh;
         position: relative;
       }
+
       .card {
         display: block;
         text-align: center;
       }
+
       .card:nth-child(2) {
         position: absolute;
-        top: 300px;
-        left: 300px;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
+
       .card:nth-child(4) {
         position: absolute;
-        top: 40%;
-        left: -300%;
+        top: 20%;
+        left: 7%;
+        transform: translate(-50%, -50%);
       }
+
       .card:nth-child(6) {
         position: absolute;
-        top: -20px;
-        left: 0px;
+        top: 15%;
+        left: 28%;
+        transform: translate(-50%, -50%);
       }
+
       .card:nth-child(8) {
         position: absolute;
-        top: 400px;
-        left: -250px;
+        top: 60%;
+        left: 10%;
+        transform: translate(-50%, -50%);
       }
+
       .card:nth-child(10) {
         position: absolute;
-        top: 550px;
-        left: 50px;
+        top: 75%;
+        left: 25%;
+        transform: translate(-50%, -50%);
       }
+
       .card:nth-child(12) {
         position: absolute;
-        top: 300px;
-        left: 300px;
+        top: 15%;
+        left: 75%;
+        transform: translate(-50%, -50%);
       }
+
       .card:nth-child(14) {
         position: absolute;
-        top: 300px;
-        left: 300px;
+        top: 40%;
+        left: 90%;
+        transform: translate(-50%, -50%);
       }
+
       .card:nth-child(16) {
         position: absolute;
-        top: 300px;
-        left: 300px;
+        top: 75%;
+        left: 80%;
+        transform: translate(-50%, -50%);
       }
+
       img {
-        width: 200px;
+        width: 13%;
       }
+
       .card .text {
         display: none;
       }
+
+      .card:nth-child(2) .text {
+        display: block;
+      }
+
+      .card:nth-child(2) img {
+        width: 16%;
+      }
+
       hr {
         display: none;
+      }
+      .line {
+        display: block;
+        border: 1px solid rgba(128, 128, 128, 0.5);
+        position: absolute;
+      }
+      .line:nth-child(17) {
+        width: 30%;
+        top: 41%;
+        left: 10%;
+        transform: rotate(5deg);
+      }
+      .line:nth-child(18) {
+        width: 10%;
+        top: 30%;
+        left: 33%;
+        transform: rotate(35deg);
+      }
+      .line:nth-child(19) {
+        width: 23%;
+        top: 55%;
+        left: 17%;
+        transform: rotate(-8deg);
+      }
+      .line:nth-child(20) {
+        width: 11%;
+        top: 63%;
+        left: 31%;
+        transform: rotate(-30deg);
+      }
+      .line:nth-child(21) {
+        width: 10%;
+        top: 30%;
+        left: 57%;
+        transform: rotate(-25deg);
+      }
+      .line:nth-child(22) {
+        width: 20%;
+        top: 45%;
+        left: 60%;
+        transform: rotate(-5deg);
+      }
+      .line:nth-child(23) {
+        width: 15%;
+        top: 64%;
+        left: 58%;
+        transform: rotate(30deg);
       }
     }
   </style>
@@ -164,7 +249,7 @@
 <hr>
 
 <div class="card">
-  <img src="./images/jq.jpg" alt="jQuery">
+  <img src="./images/jq.webp" alt="jQuery">
   <div class="sec_title">jQuery</div>
   <div class="text">
     jQuery 是⼀套跨瀏覽器的 JavaScript 函式庫，簡化 HTML 與 JavaScript 之間的操作。全球前 10,000 個存取最⾼的 網站中，有 65% 使⽤了jQuery，是⽬前最受歡迎的
@@ -202,5 +287,14 @@
     Vue (音同View) 是一套以視圖層為基礎發展的 JavaScript 漸進式框架。與其他前端框架/函式庫不同的是，Vue.js 的目標是透過簡單的 API 提供開發者實作資料綁定與操作網頁上的元件，同時也因為 Vue.js
     的核心把焦點關注在狀態與畫面的同步層級上，遂能夠輕易地與其他 JavaScript 函式庫、前端開發工具鍊等整合使用，成為一套完整的前端開發方案。
   </div>
+
 </div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+<div class="line"></div>
+
 </html>
